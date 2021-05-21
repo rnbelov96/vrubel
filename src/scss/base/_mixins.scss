@@ -1,0 +1,83 @@
+@mixin bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin reset-btn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+}
+
+@mixin reset-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+@mixin max-width($width) {
+  width: 100%;
+  max-width: $width;
+}
+
+@mixin central-align {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin title1 {
+  font-family: Tenor Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 74px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@mixin title2 {
+  font-family: Tenor Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+
+@mixin subtitle {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+}
+
+@mixin main-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 34px;
+  color: #000000;
+}
+
+@mixin main-text-bold {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  color: #000000;
+}
+
+@mixin subtitle-bold {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}

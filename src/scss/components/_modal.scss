@@ -1,0 +1,112 @@
+@media screen and (prefers-reduced-motion: reduce) {
+  .modal {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: none;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 1, 1, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease-in;
+}
+
+.modal__close {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-width: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    color: rgb(136, 136, 136);
+    content: '×';
+    font: 300 22px / 30px 'HelveticaNeueCyr', sans-serif;
+    text-align: center;
+    transition: background-color 0.25s ease 0s;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: rgba(194, 194, 194, 0.6);
+      color: black;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &::after {
+      position: absolute;
+      z-index: 2;
+      top: 5px;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
+      border-width: 0;
+      background-color: transparent;
+      border-radius: 50%;
+      color: rgb(136, 136, 136);
+      content: '×';
+      font: 300 22px / 30px 'HelveticaNeueCyr', sans-serif;
+      text-align: center;
+      transition: none;
+    }
+  }
+}
+
+.modal__center-wrapper {
+  height: 100%;
+  text-align: center;
+
+  & > * {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &::before {
+    display: inline-block;
+    height: 100%;
+    content: '';
+    vertical-align: middle;
+  }
+}
+
+.modal_video iframe {
+  @media (max-width: 575px) {
+    width: 98%;
+  }
+}

@@ -1,0 +1,94 @@
+@import './lib/reboot.scss';
+@import './lib/fonts.scss';
+@import './base/variables.scss';
+@import './base/mixins.scss';
+@import './base/global.scss';
+@import './components/modal.scss';
+
+.thanks,
+.error {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  &__body {
+    background-color: white;
+  }
+
+  &__body,
+  &__html {
+    height: 100%;
+  }
+
+  &__header {
+    overflow: hidden;
+    flex: 0 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+
+  footer {
+    flex: 0 0 auto;
+  }
+
+  &__content {
+    flex: 1 0 auto;
+    padding: 40px 0;
+
+    .container {
+      height: 100%;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__content-box {
+    width: 100%;
+  }
+
+  &__title {
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  &__user-name {
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.error {
+  &__btn-box {
+    margin-top: 20px;
+  }
+}

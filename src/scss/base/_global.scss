@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+  color: #4E4D4D;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1376px;
+  margin: 0 auto;
+
+  &_header {
+    background-color: white;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}

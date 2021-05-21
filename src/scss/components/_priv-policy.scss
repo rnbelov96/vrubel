@@ -1,0 +1,35 @@
+.priv-policy {
+  position: relative;
+  max-width: 650px;
+  padding: 24px 44px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+
+  &_modal {
+    margin: 40px auto;
+  }
+
+  @media (max-width: 575px) {
+    padding: 24px 17px;
+  }
+}
+
+.priv-policy__title {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.priv-policy__subtitle,
+.priv-policy__text {
+  font-weight: bold;
+}
+
+.priv-policy__list {
+  padding-left: 25px;
+  list-style: none;
+}
+
+.priv-policy__item {
+  padding-bottom: 5px;
+}

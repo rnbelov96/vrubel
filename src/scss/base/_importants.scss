@@ -1,0 +1,47 @@
+.input-error {
+  border: 1px solid #ce211f;
+
+  & + svg {
+    path,
+    rect {
+      fill: #ce211f;
+    }
+  }
+
+  color: #ce211f !important;
+
+  &::-webkit-input-placeholder {
+    color: #ce211f;
+  }
+
+  &::-moz-placeholder {
+    color: #ce211f;
+  }
+
+  &:-ms-input-placeholder {
+    color: #ce211f;
+  }
+
+  &:-moz-placeholder {
+    color: #ce211f;
+  }
+
+  &:hover,
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: #ce211f;
+    }
+
+    &::-moz-placeholder {
+      color: #ce211f;
+    }
+
+    &:-ms-input-placeholder {
+      color: #ce211f;
+    }
+
+    &:-moz-placeholder {
+      color: #ce211f;
+    }
+  }
+}
